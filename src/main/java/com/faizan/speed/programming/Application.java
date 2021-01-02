@@ -23,6 +23,18 @@ public class Application {
 		FizzBuzz fb = new FizzBuzz();
 		fb.execute();
 
+		/*******************************
+		 * LeetCode TwoSum Problem
+		 * Approach: BruteForce O(n2)
+		 * Complexity: EASY
+		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+		int [] theArray= new int [] {2, 3, 7, 4, 8};
+		int target =7;
+
+		TwoSum tumSum = new TwoSum();
+		int[] result = tumSum.executeBruteForce(target, theArray);
+		System.out.println("The calculated answer of TwoSum problem through bruteforce approach is => {"
+				+ result[0] + "," + result[1] + "}");
 	}
 }
 
