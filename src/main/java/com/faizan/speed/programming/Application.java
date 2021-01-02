@@ -1,6 +1,7 @@
 package com.faizan.speed.programming;
 
 import com.faizan.speed.programming.fizzbuzz.FizzBuzz;
+import com.faizan.speed.programming.reversestring.ReverseString;
 import com.faizan.speed.programming.twosum.TwoSum;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -39,6 +40,32 @@ public class Application {
 		result = TwoSum.executeTheOptimizedHashMapApproach(target, theArray);
 		System.out.println("The calculated answer of TwoSum problem through Optimized approach using HashMap is => {"
 				+ result[0] + "," + result[1] + "}");
+
+
+		/*******************************
+		 * String Reverse Problem
+		 * Approach: StringBuilder
+		 * Complexity: VERY EASY
+		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+		System.out.println("String Reverse Problem using Approach: StringBuilder -> " +
+				ReverseString.executeUsingStringBuilderReverse("HELLO WORLD"));
+
+		/*******************************
+		 * String Reverse Problem
+		 * Approach: Manual
+		 * Complexity: EASY
+		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+		System.out.println("String Reverse Problem using Approach: Manual -> " +
+				ReverseString.executeUsingManualApproach("HELLO WORLD"));
+
+
+		/*********************************************************************
+		 * String Reverse Problem
+		 * Approach: Manual + String Builder class to make just one instance
+		 * Complexity: EASY
+		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+		System.out.println("String Reverse Problem using Approach: Manual + String Builder class to make just" +
+				" one instance -> " + ReverseString.executeUsingStringAndStringBuilderWithoutReverse("HELLO WORLD"));
 
 	}
 }
