@@ -20,8 +20,7 @@ public class Application {
 		 * Complexity: VERY EASY
 		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
-		FizzBuzz fb = new FizzBuzz();
-		fb.execute();
+		FizzBuzz.execute();
 
 		/*******************************
 		 * LeetCode TwoSum Problem
@@ -31,13 +30,13 @@ public class Application {
 		int [] theArray= new int [] {2, 3, 7, 4, 8};
 		int target =7;
 
-		TwoSum tumSum = new TwoSum();
-		int[] result = tumSum.executeBruteForce(target, theArray);
+
+		int[] result = TwoSum.executeBruteForce(target, theArray);
 		System.out.println("The calculated answer of TwoSum problem through bruteforce approach is => {"
 				+ result[0] + "," + result[1] + "}");
 
 
-		result = tumSum.executeTheOptimizedHashMapApproach(target, theArray);
+		result = TwoSum.executeTheOptimizedHashMapApproach(target, theArray);
 		System.out.println("The calculated answer of TwoSum problem through Optimized approach using HashMap is => {"
 				+ result[0] + "," + result[1] + "}");
 

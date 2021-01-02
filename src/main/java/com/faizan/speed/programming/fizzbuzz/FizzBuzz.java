@@ -5,7 +5,7 @@ package com.faizan.speed.programming.fizzbuzz;
  */
 public class FizzBuzz {
 
-    public void execute() {
+    public static void execute() {
         int i=1;
         String toPrint = null;
         while(i<=100) {

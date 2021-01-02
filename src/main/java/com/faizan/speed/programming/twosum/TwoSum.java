@@ -18,7 +18,7 @@ public class TwoSum {
     // Easy approach is to use a nested loop and pick one value and check it with all others to come to a solution
     // But this will be O(n2) - Not recommended.
 
-    public int[] executeBruteForce(int target, int[] array) {
+    public static int[] executeBruteForce(int target, int[] array) {
 
         for(int i=0; i<array.length; i++) {
             int pivot = array[i]; //2
@@ -32,7 +32,7 @@ public class TwoSum {
         return new int [] {-1, -1};
     }
 
-    public int[] executeTheOptimizedHashMapApproach(int target, int[] array) {
+    public static int[] executeTheOptimizedHashMapApproach(int target, int[] array) {
 
         Map<Integer, Integer> numericMap = new HashMap<>();
         for(int i=0; i<array.length; i++) {
