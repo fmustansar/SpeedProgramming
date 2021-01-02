@@ -31,4 +31,17 @@ public class TwoSum {
         }
         return new int [] {-1, -1};
     }
+
+    public int[] executeTheOptimizedHashMapApproach(int target, int[] array) {
+
+        Map<Integer, Integer> numericMap = new HashMap<>();
+        for(int i=0; i<array.length; i++) {
+            int delta = target - array[i];
+            if(numericMap.containsKey(delta)) {
+                return new int[]{i, numericMap.get(delta)};
+            }
+            numericMap.put(array[i], i);
+        }
+        return new int [] {-1, -1};
+    }
 }

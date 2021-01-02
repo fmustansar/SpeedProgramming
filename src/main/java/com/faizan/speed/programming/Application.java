@@ -35,6 +35,12 @@ public class Application {
 		int[] result = tumSum.executeBruteForce(target, theArray);
 		System.out.println("The calculated answer of TwoSum problem through bruteforce approach is => {"
 				+ result[0] + "," + result[1] + "}");
+
+
+		result = tumSum.executeTheOptimizedHashMapApproach(target, theArray);
+		System.out.println("The calculated answer of TwoSum problem through Optimized approach using HashMap is => {"
+				+ result[0] + "," + result[1] + "}");
+
 	}
 }
 
