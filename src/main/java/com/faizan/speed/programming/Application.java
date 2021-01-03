@@ -2,6 +2,7 @@ package com.faizan.speed.programming;
 
 import com.faizan.speed.programming.fizzbuzz.FizzBuzz;
 import com.faizan.speed.programming.implementstack.StackImplementedByFaizan;
+import com.faizan.speed.programming.integertoroman.IntegerToRomanNumeral;
 import com.faizan.speed.programming.reversenumber.ReverseNumber;
 import com.faizan.speed.programming.reversestring.ReverseString;
 import com.faizan.speed.programming.twosum.TwoSum;
@@ -98,6 +99,15 @@ public class Application {
 		 * Complexity: Easy to Medium
 		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 		testReverseNumber();
+
+		/*********************************************************************
+		 * Int to roman number conversion
+		 * Complexity: Medium
+		 * Limit: less than 4000
+		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+		System.out.println("After Int to roman number conversion->" +IntegerToRomanNumeral.execute(3999));
+
+
 	}
 
 	private void testReverseNumber() {
