@@ -2,6 +2,7 @@ package com.faizan.speed.programming;
 
 import com.faizan.speed.programming.fizzbuzz.FizzBuzz;
 import com.faizan.speed.programming.implementstack.StackImplementedByFaizan;
+import com.faizan.speed.programming.reversenumber.ReverseNumber;
 import com.faizan.speed.programming.reversestring.ReverseString;
 import com.faizan.speed.programming.twosum.TwoSum;
 import org.springframework.boot.SpringApplication;
@@ -89,8 +90,21 @@ public class Application {
 		 * Complexity: Easy to Medium
 		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 		testStack();
+
+
+		/*********************************************************************
+		 * Int Reverse Problem
+		 * Approach:
+		 * Complexity: Easy to Medium
+		 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+		testReverseNumber();
 	}
 
+	private void testReverseNumber() {
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("Reversed Number is -> " + ReverseNumber.execute(54321));
+	}
 
 	private void testStack() {
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
